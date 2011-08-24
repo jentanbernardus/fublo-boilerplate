@@ -10,8 +10,8 @@ You will then need to use `bloginfo('stylesheet_url')` to get the URL to the the
 
 Also, to get the benefits of the precoded header and footer you must call them like so.
 
-    get_header('fublo_boilerplate');
-    get_footer('fublo_boilerplate');
+    get_header('fublo-boilerplate');
+    get_footer('fublo-boilerplate');
 
 These can be called from your custom header and footer.
 
