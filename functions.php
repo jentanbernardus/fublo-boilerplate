@@ -17,11 +17,17 @@ function fublo_boilerplate_init()
 		wp_register_style('fublo_boilerplate_960', $template_url . '/960/code/css/min/960.css');
 		wp_register_style('fublo_boilerplate_960_responsive', $template_url . '/960-responsive/style.css');
 		
-		// Enqueue the styles
+		// Enqueue styles
 		wp_enqueue_style('fublo_boilerplate_reset');
 		wp_enqueue_style('fublo_boilerplate_text');
 		wp_enqueue_style('fublo_boilerplate_960');
 		wp_enqueue_style('fublo_boilerplate_960_responsive');
+		
+		// Register scripts
+		wp_register_script('fublo_boilerplate_mootools', $template_url . '/mootools.js', false, '1.3.2', true);
+		
+		// Enqueue scripts
+		wp_enqueue_script('fublo_boilerplate_mootools');
 		
 		// Remove unwanted things from wp_head()
 		remove_action('wp_head', 'rsd_link');
