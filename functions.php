@@ -1,6 +1,14 @@
 <?php
 
 /**
+ * Dequeues MooTools
+ */
+function fublo_boilerplate_dequeue_mootools()
+{
+	wp_dequeue_script('fublo_boilerplate_mootools');
+}
+
+/**
  * Enqueues skeleton and cleans up wp_head
  */
 function fublo_boilerplate_init()

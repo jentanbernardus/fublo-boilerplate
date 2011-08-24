@@ -22,3 +22,7 @@ So you just write in the body.
 Please include all scripts in the footer and if you need mootools set that as a dependency. Here is an example.
 
 	wp_register_script('my_epic_script', get_bloginfo('stylesheet_url') . '/somescript.js', array('fublo_boilerplate_mootools'), 'version or false', true);
+
+If you do not require MooTools for this, simply add the following line to your functions file.
+
+    add_action('init', 'fublo_boilerplate_dequeue_mootools', 11);
