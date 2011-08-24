@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Enqueues all required scripts and styles
+ * Enqueues skeleton and cleans up wp_head
  */
 function fublo_boilerplate_init()
 {
@@ -10,9 +10,6 @@ function fublo_boilerplate_init()
 	{
 		// Get the template URL
 		$template_url = get_bloginfo('template_url');
-		
-		// Register scripts
-		wp_register_script('fublo_boilerplate_html5_shim', $template_url . '/html5.js');
 		
 		// Register styles
 		wp_register_style('fublo_boilerplate_skeleton_base', $template_url . '/skeleton/stylesheets/base.css');
@@ -34,9 +31,6 @@ function fublo_boilerplate_init()
 		remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 		wp_deregister_script('l10n');
 		
-		// Enqueue the scripts
-		wp_enqueue_script('fublo_boilerplate_html5_shim');
-		
 		// Enqueue the styles
 		wp_enqueue_style('fublo_boilerplate_skeleton_base');
 		wp_enqueue_style('fublo_boilerplate_skeleton_skeleton');
@@ -44,5 +38,5 @@ function fublo_boilerplate_init()
 	}
 }
 
-// Hook into the initialisation
+// Add the initialisation hook
 add_action('init', 'fublo_boilerplate_init');
