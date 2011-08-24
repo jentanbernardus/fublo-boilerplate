@@ -1,6 +1,6 @@
 A boilerplate parent theme from [Fublo](http://fublo.net).
 
-This lays down the foundations for you to build a child theme upon. It does this by coming pre included with [the 960 grid system](http://960.gs), [Foldy960](https://github.com/davatron5000/Foldy960) which makes the grid responsive (change sizes on smaller browsers), [MooTools](http://mootools.net) and [a HTML5 enabling script](http://remysharp.com/2009/01/07/html5-enabling-script) so you can style HTML5 elements in older browsers.
+This lays down the foundations for you to build a child theme upon. It does this by coming with [the 960 grid system](http://960.gs), [Foldy960](https://github.com/davatron5000/Foldy960) which makes the grid responsive (change sizes on smaller browsers), [MooTools](http://mootools.net) and [a HTML5 enabling script](http://remysharp.com/2009/01/07/html5-enabling-script) so you can style HTML5 elements in older browsers.
 
 If you do not yet know how to create a child theme then don't panic, it is literally one line in your `style.css` header. And here it is.
 
