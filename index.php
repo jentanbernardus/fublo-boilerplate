@@ -1,5 +1,4 @@
-<?php get_header(); ?>
+<?php
 
-<h1>Hello, World!</h1>
-
-<?php get_footer(); ?>
+get_header('fublo_boilerplate');
+get_footer('fublo_boilerplate');

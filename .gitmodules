@@ -1,3 +1,6 @@
-[submodule "skeleton"]
-	path = skeleton
-	url = git://github.com/dhgamache/Skeleton.git
+[submodule "960"]
+	path = 960
+	url = git://github.com/nathansmith/960-Grid-System.git
+[submodule "960-responsive"]
+	path = 960-responsive
+	url = git://github.com/davatron5000/Foldy960.git
