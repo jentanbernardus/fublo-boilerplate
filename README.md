@@ -1,4 +1,4 @@
-A boilerplate from [Fublo](http://fublo.net).
+A boilerplate parent theme from [Fublo](http://fublo.net).
 
 Comes with a HTML5 template, Skeleton and MooTools.
 
