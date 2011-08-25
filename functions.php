@@ -19,16 +19,11 @@ function fublo_boilerplate_init()
 		// Get the template URL
 		$template_url = get_bloginfo('template_url');
 		
-		// Register styles
+		// Enqueue assets
 		wp_register_style('fublo_boilerplate_skeleton', $template_url . '/skeleton.php');
-		
-		// Enqueue styles
 		wp_enqueue_style('fublo_boilerplate_skeleton');
 		
-		// Register scripts
 		wp_register_script('fublo_boilerplate_mootools', $template_url . '/mootools.php', false, '1.3.2', true);
-		
-		// Enqueue scripts
 		wp_enqueue_script('fublo_boilerplate_mootools');
 		
 		// Remove unwanted things from wp_head()
