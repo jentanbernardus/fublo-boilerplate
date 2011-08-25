@@ -13,7 +13,7 @@
 			}
 		?></title>
 		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-		<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/html5.js'></script>
+		<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/html5.php'></script>
 		<?php wp_head(); ?>
 	</head>
 	
