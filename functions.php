@@ -30,7 +30,7 @@ function fublo_boilerplate_init()
 		wp_enqueue_style('fublo_boilerplate_layout');
 		
 		// Register scripts
-		wp_register_script('fublo_boilerplate_mootools', $template_url . '/mootools.js', false, '1.3.2', true);
+		wp_register_script('fublo_boilerplate_mootools', $template_url . '/mootools.php', false, '1.3.2', true);
 		
 		// Enqueue scripts
 		wp_enqueue_script('fublo_boilerplate_mootools');
