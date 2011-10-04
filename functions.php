@@ -20,10 +20,10 @@ function fublo_boilerplate_init()
 		$template_url = get_bloginfo('template_url');
 		
 		// Enqueue assets
-		wp_register_style('fublo_boilerplate_skeleton', $template_url . '/skeleton.php', false, '1.1');
+		wp_register_style('fublo_boilerplate_skeleton', $template_url . '/assets/css/skeleton.css', false, '1.1');
 		wp_enqueue_style('fublo_boilerplate_skeleton');
 		
-		wp_register_script('fublo_boilerplate_mootools', $template_url . '/mootools.php', false, '1.3.2', true);
+		wp_register_script('fublo_boilerplate_mootools', $template_url . '/assets/javascript/mootools.js', false, '1.4.0', true);
 		wp_enqueue_script('fublo_boilerplate_mootools');
 		
 		// Remove unwanted things from wp_head()
