@@ -1,14 +1,6 @@
 <?php
 
 /**
- * Dequeues MooTools
- */
-function fublo_boilerplate_dequeue_mootools()
-{
-	wp_dequeue_script('fublo_boilerplate_mootools');
-}
-
-/**
  * Enqueues skeleton and cleans up wp_head
  */
 function fublo_boilerplate_init()
@@ -19,12 +11,9 @@ function fublo_boilerplate_init()
 		// Get the template URL
 		$template_url = get_bloginfo('template_url');
 		
-		// Enqueue assets
-		wp_register_style('fublo_boilerplate_skeleton', $template_url . '/assets/css/skeleton.css', false, '1.1');
-		wp_enqueue_style('fublo_boilerplate_skeleton');
-		
-		wp_register_script('fublo_boilerplate_mootools', $template_url . '/assets/javascript/mootools.js', false, '1.4.0', true);
-		wp_enqueue_script('fublo_boilerplate_mootools');
+		// Register assets
+		wp_register_style('skeleton', $template_url . '/assets/css/skeleton.css', false, '1.1');
+		wp_register_script('mootools', $template_url . '/assets/javascript/mootools.js', false, '1.4.0', true);
 		
 		// Remove unwanted things from wp_head()
 		remove_action('wp_head', 'rsd_link');
