@@ -1,4 +1,4 @@
 <?php
 
-get_header('fublo_boilerplate');
-get_footer('fublo_boilerplate');
+get_header('fublo-boilerplate');
+get_footer('fublo-boilerplate');
