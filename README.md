@@ -23,10 +23,10 @@ The pre made header and footer include the doctype plus open and close the body 
 
 Please include all scripts in the footer and if you need mootools set that as a dependency. Here is an example.
 
-	wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);
+	wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('mootools'), false, true);
 
 Where we have passed false you can pass a version string for your script.
 
-If you do not require MooTools for this, simply add the following line to your functions file.
+You will also need to set skeleton as a dependency if you wish to use it, like this.
 
-    add_action('init', 'fublo_boilerplate_dequeue_mootools', 11);
+    wp_register_style('my_stylesheet', get_bloginfo('stylesheet_directory') . '/style.css', array('skeleton'));
