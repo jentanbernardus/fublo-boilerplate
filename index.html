@@ -38,8 +38,8 @@
 					
 					<p><em>Template: fublo-boilerplate</em></p>
 					
-					<p>You will then need to use get_stylesheet_directory_uri() to get the URL to the themes directory rather than bloginfo('theme_url').</p>
-					<p>This is because theme_url is the URL of the parent theme. The stylesheets directory however is the directory of your child theme.</p>
+					<p>You will then need to use get_bloginfo('stylesheet_directory') to get the URL to the themes directory rather than get_bloginfo('template_url').</p>
+					<p>This is because template_url is the URL of the parent theme. The stylesheets directory however is the directory of your child theme.</p>
 					<p>Also, to get the benefits of the precoded header and footer you must call them like so.</p>
 					
 					<p><em>
@@ -55,7 +55,7 @@
 					<h4>Assets</h4>
 					<p>Please include all scripts in the footer and if you need mootools set that as a dependency. Here is an example.</p>
 					
-					<p><em>wp_register_script('my_epic_script', get_stylesheet_directory_uri() . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);</em></p>
+					<p><em>wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);</em></p>
 					
 					<p>Where we have passed false you can pass a version string for your script.</p>
 					<p>If you do not require MooTools for this, simply add the following line to your functions file.</p>
