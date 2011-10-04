@@ -8,9 +8,9 @@ If you do not yet know how to create a child theme then don't panic, it is liter
 
 Now your theme is a child of the boilerplate.
 
-You will then need to use `get_stylesheet_directory_uri()` to get the URL to the themes directory rather than `bloginfo('theme_url')`.
+You will then need to use `get_bloginfo('stylesheet_directory')` to get the URL to the themes directory rather than `get_bloginfo('template_url')` etc.
 
-This is because `theme_url` is the URL of the parent theme. The stylesheets directory however is the directory of your child theme.
+This is because `template_url` is the URL of the parent theme. The stylesheets directory however is the directory of your child theme.
 
 Also, to get the benefits of the precoded header and footer you must call them like so.
 
@@ -23,7 +23,7 @@ The pre made header and footer include the doctype plus open and close the body 
 
 Please include all scripts in the footer and if you need mootools set that as a dependency. Here is an example.
 
-	wp_register_script('my_epic_script', get_stylesheet_directory_uri() . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);
+	wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);
 
 Where we have passed false you can pass a version string for your script.
 
