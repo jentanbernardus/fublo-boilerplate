@@ -55,12 +55,12 @@
 					<h4>Assets</h4>
 					<p>Please include all scripts in the footer and if you need mootools set that as a dependency. Here is an example.</p>
 					
-					<p><em>wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('fublo_boilerplate_mootools'), false, true);</em></p>
+					<p><em>wp_register_script('my_epic_script', get_bloginfo('stylesheet_directory') . '/somescript.js', array('mootools'), false, true);</em></p>
 					
 					<p>Where we have passed false you can pass a version string for your script.</p>
-					<p>If you do not require MooTools for this, simply add the following line to your functions file.</p>
+					<p>You will also need to set skeleton as a dependency if you wish to use it, like this.</p>
 					
-					<p><em>add_action('init', 'fublo_boilerplate_dequeue_mootools', 11);</em></p>
+					<p><em>wp_register_style('my_stylesheet', get_bloginfo('stylesheet_directory') . '/style.css', array('skeleton'));</em></p>
 				</div>
 			</div>
 		</div>
