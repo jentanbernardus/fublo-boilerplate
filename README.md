@@ -2,6 +2,25 @@ A boilerplate parent theme from [Fublo](http://fublo.net).
 
 This lays down the foundations for you to build a child theme upon. It does this by combining [Skeleton](http://www.getskeleton.com/), [MooTools](http://mootools.net) and [a HTML5 enabling script](http://remysharp.com/2009/01/07/html5-enabling-script) so you can style HTML5 elements in older browsers.
 
+#### This is a bare-bones WordPress theme meant for developers.
+
+In order to make use of this theme, you will need to create a child theme which has fublo-boilerplate as its parent.
+
+### Example and quickstart
+
+There is an example of a child theme in this repository.
+
+https://github.com/fublo/fublo-boilerplate/tree/master/fublo-boilerplate-example
+
+To get going quickly:
+
+* Install the fublo-boilerplate in your `wp-content/themes` folder.
+* Move the example sub folder `fublo-boilerplate-example` up a level to your `wp-content/themes`.
+* Activate the fublo-boilerplate-example theme.
+* Rename it up to what you want and get started using the boilerplate for your development.
+
+### Usage notes
+
 If you do not yet know how to create a child theme then don't panic, it is literally one line in your `style.css` header. And here it is.
 
     Template: fublo-boilerplate
