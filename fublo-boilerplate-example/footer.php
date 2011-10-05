@@ -1,0 +1,3 @@
+<?php
+// get parent footer...
+get_footer('fublo-boilerplate');
