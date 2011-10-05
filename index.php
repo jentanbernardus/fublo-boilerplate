@@ -9,7 +9,8 @@ get_header('fublo-boilerplate');
 Boilerplate in your theme development.</p>
 <ol>
     <li>You should create a child theme that uses this as its
-    parent. <a href=''>Example here!!!</a></li>
+    parent. There is an example child theme in the "fublo-boilerplate-example"
+    folder. <a href="https://github.com/fublo/fublo-boilerplate/tree/master/fublo-boilerplate-example">View on GitHub</a>.</li>
     <li>Activate your new child theme and keep the boilerplate
     deactivated, but still installed in your WordPress themes directory.
     More info about <a href="https://codex.wordpress.org/Child_Themes">child
@@ -40,7 +41,7 @@ folder.</p>
 <ul>
     <li><a href="https://github.com/fublo/fublo-boilerplate/">GitHub repository</a></li>
     <li><a href="https://codex.wordpress.org/Child_Themes">Child themes documentation</a></li>
-    <li>Example child theme (soon)</li>
+    <li><a href="https://github.com/fublo/fublo-boilerplate/tree/master/fublo-boilerplate-example">Example child theme</a></li>
     <li><a href="http://fublo.net/">Fublo home page</a></li>
 </ul>
 
