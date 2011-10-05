@@ -40,8 +40,8 @@ folder.</p>
 <ul>
     <li><a href="https://github.com/fublo/fublo-boilerplate/">GitHub repository</a></li>
     <li><a href="https://codex.wordpress.org/Child_Themes">Child themes documentation</a></li>
-    <li>Example child theme</li>
-    <li>Fublo home page</li>
+    <li>Example child theme (soon)</li>
+    <li><a href="http://fublo.net/">Fublo home page</a></li>
 </ul>
 
 <?php
