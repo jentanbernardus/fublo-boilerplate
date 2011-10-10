@@ -54,6 +54,7 @@ Have fun!
 # Licence
 
 A boilerplate parent theme for WordPress
+
 Copyright (C) 2011 Fublo Ltd
 
 This program is free software: you can redistribute it and/or modify
