@@ -49,6 +49,8 @@ You will also need to set skeleton as a dependency if you wish to use it, like t
 
     wp_register_style('my_stylesheet', get_bloginfo('stylesheet_directory') . '/style.css', array('skeleton'));
 
+Have fun!
+
 # Licence
 
 A boilerplate parent theme for WordPress
